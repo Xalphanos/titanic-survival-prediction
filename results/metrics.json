@@ -1,0 +1,31 @@
+{
+  "dataset_rows": 891,
+  "dataset_columns": 10,
+  "best_model": "Logistic Regression",
+  "comparison": [
+    {
+      "Model": "Logistic Regression",
+      "Best CV F1": 0.7294,
+      "Test Accuracy": 0.8045,
+      "Test F1": 0.7287,
+      "Test ROC-AUC": 0.8505
+    },
+    {
+      "Model": "Random Forest",
+      "Best CV F1": 0.7508,
+      "Test Accuracy": 0.8045,
+      "Test F1": 0.7244,
+      "Test ROC-AUC": 0.8327
+    }
+  ],
+  "best_params": {
+    "logistic_regression": {
+      "classifier__C": 1
+    },
+    "random_forest": {
+      "classifier__max_depth": 10,
+      "classifier__min_samples_split": 5,
+      "classifier__n_estimators": 100
+    }
+  }
+}
